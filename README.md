@@ -1,7 +1,7 @@
 # SAAS-Landing-Page-13
 
 
-#### :mag: This is a sample website home page which demonstrates the interior design landing page theme!
+#### :mag: This is a sample website home page which demonstrates the interior SAAS services theme!
 
 #### 🖥️ Tech used: HTML & CSS
 
