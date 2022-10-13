@@ -1,0 +1,395 @@
+body {
+    width: 100%;
+    height: 230vh;
+
+    font-family: Noto Sans;
+}
+
+.header-background {
+    background-color: #8f64ca;
+    width: 100%;
+    height: 630px;
+
+    border-radius: 50px;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbuttons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listitems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 80%;
+}
+
+.listitem {
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+
+.listitem.active {
+    text-decoration: underline;
+    color: #1bbcef;
+}
+
+.logo-here {
+    height: 50px;
+    width: auto;
+}
+
+.navbar-button {
+    background-color: #1bbcef;
+    border: none;
+
+    width: 140px;
+    height: 40px;
+
+    margin: 0px 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.intro-header {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+
+.intro-big-text {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 5% 0px;
+    width: 80%;
+}
+
+.intro-small-text {
+    font-size: 15px;
+    font-weight: 300;
+    width: 80%;
+}
+
+
+.intro-svg {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-svg img {
+    height: 100%;
+    width: auto;
+}
+
+.overview-container {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-svg {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-svg img {
+    height: 100%;
+    width: auto;
+}
+
+.overview-info {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overview-info-heading {
+    font-size: 30px;
+    font-weight: 800;
+
+    width: 60%;
+}
+
+.overview-bullet-point {
+    width: 50%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.overview-bullet-point-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.overview-bullet-point-desc {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.feature-title {
+    width: 100%;
+    margin: 20px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.feature-cards {
+    width: 80%;
+    height: 340px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.feature-card {
+    height: 90%;
+    width: 22%;
+
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px #b6b6b6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feature-card img {
+    height: 40%;
+    width: auto;
+
+    background-color: var(--bgc);
+    color: var(--bgc);
+    border-radius: 50%;
+    padding: 16px;
+    margin-top: 5%;
+}
+
+
+.feature-card-info {
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    border-radius: 30px;
+}
+
+.feature-card-info-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.feature-card-info-desc {
+    font-size: 15px;
+    width: 90%;
+    text-align: center;
+}
+
+.feature-card-info.active {
+    background-color: #8f64ca;
+    color: white;
+}
+
+@media (max-width: 440px) {
+    * {margin: 0; padding: 0px;}
+
+    body {
+        width: 100%;
+        height: 300vh;
+    }
+    
+    .header-background {
+        width: 100%;
+        height: 105vh;
+        border-radius: 0px;
+    }
+    
+    .navbar {
+        width: 100%;
+        height: 30%;
+        flex-direction: column;
+    }
+    
+    .navbuttons {
+        width: 90%;
+        height: 60%;
+        flex-wrap: wrap;
+    }
+    
+    .listitems {
+        flex-wrap: wrap;
+        width: 80%;
+        height: 50%;
+    }
+    
+    .listitem {
+        list-style-type: none;
+        width: 30%;
+        text-align: center;
+    }
+    
+    .logo-here {
+        height: 50px;
+        width: auto;
+    }
+    
+    .navbar-button {
+        font-weight: 500;
+    }
+    
+    .intro-header {
+        width: 100%;
+        height: 68%;
+        flex-direction: column;
+    }
+    
+    .intro-box {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .intro-big-text {
+        font-size: 42px;
+        font-weight: 600;
+        width: 90%;
+        margin: 5% 0px;
+    }
+    
+    .intro-small-text {
+        font-size: 18px;
+        font-weight: 400;
+        width: 90%;
+    }
+    
+    
+    .intro-svg {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .intro-svg img {
+        height: auto;
+        width: 90%;
+    }
+    
+    .overview-container {
+        width: 100%;
+        height: 105vh;
+        flex-direction: column-reverse;
+    }
+    
+    .overview-svg {
+        height: 45%;
+        width: 100%;
+    }
+    
+    .overview-svg img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .overview-info {
+        width: 90%;
+        height: 50%;
+        text-align: center;
+    }
+    
+    .overview-info-heading {
+        width: 90%;
+    }
+    
+    .overview-bullet-point {
+        width: 80%;
+        height: 20%;
+        align-items: center;
+    }
+    
+    .overview-bullet-point-desc {
+        font-size: 16px;
+    }
+    
+    .feature-title {
+        width: 100%;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    .feature-cards {
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 80vh;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .feature-card {
+        width: 40%;
+        height: 45%;
+    }
+    
+    .feature-card img {
+        width: 40%;
+        height: auto;
+    }
+    
+    .feature-card-info {
+        height: 60%;
+    }
+}
